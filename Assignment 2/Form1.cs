@@ -24,7 +24,9 @@ namespace Assignment_2
                 double r1 = double.Parse(textBox1.Text);
                 double r2 = double.Parse(textBox2.Text);
                 double r3 = double.Parse(textBox3.Text);
-                double answer = r1 + r2 + r3;
+                double r4 = double.Parse(textBox7.Text);
+                double r5 = double.Parse(textBox8.Text);
+                double answer = r1 + r2 + r3 + r4 + r5;
                 label1.Text = "Total resistance = " + answer.ToString();
             }
             catch
@@ -49,6 +51,10 @@ namespace Assignment_2
                 label2.Text = "Total resistance = ";
             }
         }
-  
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
