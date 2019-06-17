@@ -43,17 +43,16 @@ namespace Assignment_2
                 double r1 = double.Parse(textBox4.Text);
                 double r2 = double.Parse(textBox5.Text);
                 double r3 = double.Parse(textBox6.Text);
-                double answer = 1.0 / (1.0 / r1 + 1.0 / r2 + 1.0 / r3 );
-                label2.Text = "Total resistance = "+ answer.ToString();
+                double r4 = double.Parse(textBox9.Text);
+                double r5 = double.Parse(textBox10.Text);
+                double answer = 1.0 / (1.0 / r1 + 1.0 / r2 + 1.0 / r3 + 1.0 / r4 + 1.0 / r5);
+                label2.Text = "Total resistance = " + answer.ToString();
             }
             catch
             {
                 label2.Text = "Total resistance = ";
             }
-        }
 
-        private void label9_Click(object sender, EventArgs e)
-        {
 
         }
     }
